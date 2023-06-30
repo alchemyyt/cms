@@ -1,0 +1,105 @@
+:root{
+  --bgDark:#6719be  ;
+  --bgLight:#00a1f8  ;
+  --contrastColor:#FFCA5C ;
+  --contrastColorDark:#0dda4b ;
+  --text:rgb(208, 211, 241);
+  --h1:2.5rem;
+  --h2:2rem;
+  --h3:1.5rem;
+  --fontMedium:1.3rem;
+  --fontSmall:1rem;
+  --marginSmall:.4rem;
+  --marginMedium:.6rem;
+  --marginLarge:1rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fuzzy Bubbles';
+  font-size: 62.5%
+}
+.nav,.nav ul,.nav ul li{
+  background-color: var(--bgDark);
+}
+h2{
+  font-size: var(--h1);
+  background: rgb(0,161,248);
+  background: linear-gradient(0deg, rgba(0,161,248,1) 0%, rgba(13,218,75,1) 100%);
+  border-radius: var(--marginMedium);
+  -webkit-border-radius: var(--marginMedium);
+  -moz-border-radius: var(--marginMedium);
+  -ms-border-radius: var(--marginMedium);
+  -o-border-radius: var(--marginMedium);
+  padding: var(--marginSmall);
+}
+h1{
+  font-size: var(--h2);
+}
+h3{
+  font-size: var(--h3);
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--marginLarge);
+}
+.nav ul li{
+  margin: var(--marginSmall) var(--marginLarge);
+}
+button{
+  display: grid;
+  place-items: center;
+}
+.nav #menuIcon{
+  display: none;
+  background-color: var(--contrastColorDark);
+  margin-left: var(--marginLarge);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: var(--marginSmall);
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.add  button{
+  margin-left: var(--marginLarge);
+}
+.add{
+  display: flex;
+  align-items: center;
+  background: rgb(0,161,248);
+  background: linear-gradient(0deg, rgba(0,161,248,1) 0%, rgba(13,218,75,1) 100%);
+}
+@media (max-width: 480px) {
+  .nav #menuIcon{
+    display: block;
+    position: absolute;
+    left: 0;
+
+  }
+
+
+}
+/*https://hue.tools/mix?format=hex*/
+/*#6719be
+#004de8
+#006dff
+#0085ff
+#0098ff
+#00a9ea
+#00b8c8
+#00c59f
+#00d175
+#0dda4b*/
