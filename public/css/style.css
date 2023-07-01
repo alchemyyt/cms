@@ -25,6 +25,12 @@
 body{
   background-color: var(--bgBlueDark);
 }
+.inactive{
+  display: none;
+}
+a{
+  text-decoration: none;
+}
 .nav,.nav ul,.nav ul li{
   background-color: var(--bgViolet);
 }
@@ -164,6 +170,38 @@ button, input[type="submit"], input[type="reset"] {
     margin: auto 0;
     text-align: center;
     margin-top: var(--marginLarge);
+  }
+  .menu{
+    position: absolute;
+    background-color: var(--bgViolet);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  #menuClose{
+    color: var(--contrastColorDark);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin: var(--marginLarge);
+    font-size: var(--h1);
+  }
+  .menu ul{
+    margin: var(--marginLarge) auto;
+    display: flex;
+    flex-direction: column;
+    padding: var(--marginLarge);
+  }
+  .menu ul li{
+    display: grid;
+    align-self: center;
+    place-items: center;
+    margin: var(--marginLarge);
+  }
+  .menu ul li h2{
+    width: 60vw;
+    text-align: center;
+    color: black;
   }
 }
 /*https://hue.tools/mix?format=hex*/

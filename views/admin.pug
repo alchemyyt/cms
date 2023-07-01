@@ -1,8 +1,18 @@
 extends layout
 block content
-  header(class="nav")
+  div(class="menu",class="inactive") Soy un menu
+    span(class="material-symbols-outlined",id="menuClose") close
     ul
       li
+        a(href="")
+          h2 Pages
+      li
+        a(href="")
+          span
+            h2 Login
+  header(class="nav")
+    ul
+      li(id="button")
         button
           span(class="material-symbols-outlined",id="menuIcon") menu
       li(class="navTitle")
@@ -200,5 +210,5 @@ block content
 
 
   footer(class="footer") Devlopment by josemontesdeoca00@gmail.com
-
+  script(type="text/javascript" src='./scripts/admin.js')
 
