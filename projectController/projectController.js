@@ -4,3 +4,6 @@ exports.projectHome=(req,res)=>{
 exports.projectAbout=(req,res)=>{
   res.render('about')
 }
+exports.projectAdmin=(req,res)=>{
+  res.render('admin')
+}

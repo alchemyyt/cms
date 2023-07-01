@@ -1,14 +1,16 @@
 :root{
-  --bgDark:#6719be  ;
-  --bgLight:#00a1f8  ;
+  --bgViolet:#6719be ;
+  --bgBlueDark:#004DE8  ;
+  --bgBlueMedium:#006DFF;
+  --bgBlueLigth:#00A9EA;
   --contrastColor:#FFCA5C ;
   --contrastColorDark:#0dda4b ;
   --text:rgb(208, 211, 241);
-  --h1:2.5rem;
-  --h2:2rem;
-  --h3:1.5rem;
-  --fontMedium:1.3rem;
-  --fontSmall:1rem;
+  --h1:3.5rem;
+  --h2:3rem;
+  --h3:2.5rem;
+  --fontMedium:2rem;
+  --fontSmall:1.5rem;
   --marginSmall:.4rem;
   --marginMedium:.6rem;
   --marginLarge:1rem;
@@ -20,8 +22,11 @@
   font-family: 'Fuzzy Bubbles';
   font-size: 62.5%
 }
+body{
+  background-color: var(--bgBlueDark);
+}
 .nav,.nav ul,.nav ul li{
-  background-color: var(--bgDark);
+  background-color: var(--bgViolet);
 }
 h2{
   font-size: var(--h1);
@@ -76,12 +81,6 @@ button, input[type="submit"], input[type="reset"] {
 .add  button{
   margin-left: var(--marginLarge);
 }
-.add{
-  display: flex;
-  align-items: center;
-  background: rgb(0,161,248);
-  background: linear-gradient(0deg, rgba(0,161,248,1) 0%, rgba(13,218,75,1) 100%);
-}
 @media (max-width: 480px) {
   .nav #menuIcon{
     display: block;
@@ -89,8 +88,83 @@ button, input[type="submit"], input[type="reset"] {
     left: 0;
 
   }
-
-
+  .navTitle{
+    display: none;
+  }
+  .add h3{
+    display: none;
+  }
+  .add button span{
+    display: block;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgb(0,161,248);
+    background: linear-gradient(0deg, rgba(0,161,248,1) 0%, rgba(13,218,75,1) 100%);
+    margin-right: var(--marginLarge);
+    padding: var(--marginSmall);
+}
+  .searchEngine{
+    font-size: var(--h3);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: var(--marginSmall);
+  }
+  .searchEngine input {
+    margin-left: var(--marginLarge);
+  }
+  .pagesCtn{
+    background-color: var(--bgBlueMedium);
+    margin: 0 auto;
+    padding:  var(--marginSmall);
+  }
+  .pagesCtn ul{
+    width: 90%;
+    margin: var(--marginSmall) auto;
+    background-color: var(--bgBlueLigth);
+    border-radius: var(--marginLarge);
+    font-size: var(--h3);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--marginSmall) 0px ;
+    -webkit-border-radius: var(--marginLarge);
+    -moz-border-radius: var(--marginLarge);
+    -ms-border-radius: var(--marginLarge);
+    -o-border-radius: var(--marginLarge);
+}
+  .pagesCtn .pageTitle{
+    font-size: var(--fontMedium);
+  }
+  .pagesCtn .pageDate{
+    font-size: var(--fontSmall);
+  }
+  .pagesCtn .pageEdit{
+    display: grid;
+    place-content: center;
+  }
+  .pagesCtn .pageDelete{
+    display: grid;
+    place-content: center;
+  }
+  .pagesCtn .pageEdit span{
+    font-size: var(--fontMedium);
+  }
+  .pagesCtn .pageDelete span{
+    font-size: var(--fontMedium);
+  }
+  .footer{
+    font-size: var(--fontSmall);
+    margin: auto 0;
+    text-align: center;
+    margin-top: var(--marginLarge);
+  }
 }
 /*https://hue.tools/mix?format=hex*/
 /*#6719be
