@@ -32,6 +32,9 @@ body{
 a{
   text-decoration: none;
 }
+label{
+  font-size: var(--fontMedium);
+}
 .nav,.nav ul,.nav ul li{
   background-color: var(--bgViolet);
 }
@@ -216,6 +219,48 @@ button, input[type="submit"], input[type="reset"] {
     width: 60vw;
     text-align: center;
     color: black;
+  }
+  .addPageForm ul{
+    background-color: var(--bgBlueMedium);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--marginLarge);
+  }
+  .addPageForm ul li{
+    display: flex;
+    flex-direction: column;
+  }
+  .addPageForm ul #statusCtn{
+    display: inline-block;
+  }
+  .addPageForm ul #statusCtn input{
+    margin-left: var(--marginLarge);
+  }
+  .addPageForm label{
+    text-align: center;
+    margin: var(--marginLarge) 0;
+  }
+  .addPageForm #titulo,.addPageForm #fecha,.addPageForm #tags{
+    font-size: var(--fontMedium);
+    width: 90vw;
+    text-align: center;
+    background-color: var(--bgBlueLigth);
+    border: none;
+  }
+  .addPageForm #contenido{
+    font-size: var(--fontMedium);
+    width: 90vw;
+    height: 20rem;
+    text-align: center;
+    background-color: var(--bgBlueLigth);
+    border: none;
+  }
+  .pageTitle{
+    text-align: center;
+    margin: 0 auto;
+    padding: var(--marginLarge);
   }
 }
 /*https://hue.tools/mix?format=hex*/

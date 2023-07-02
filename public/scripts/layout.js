@@ -1,6 +1,7 @@
 const menuButton=document.getElementById('menuIcon');
 const menu = document.getElementsByClassName('menu')[0];
 const menuClose=document.getElementById('menuClose');
+const title=document.getElementById('title')
 menuButton.addEventListener('click',()=>{
   active(menu)
 })

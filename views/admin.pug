@@ -1,30 +1,5 @@
 extends layout
 block content
-  div(class="menu",class="inactive")
-    span(class="material-symbols-outlined",id="menuClose") close
-    ul
-      li
-        a(href="")
-          h2 Pages
-      li
-        a(href="")
-          span
-            h2 Login
-  header(class="nav")
-    ul
-      li(id="button")
-        button
-          span(class="material-symbols-outlined",id="menuIcon") menu
-      li(class="navTitle")
-        h2 Admin
-      li
-        h1 Pages
-      li(class="add")
-        span
-          h3 add
-        button
-          a(href="/add")
-            span(class="material-symbols-outlined") add
   form(action="" class="searchEngine")
     label(for="search") Search
     input(type="text" id="search")
@@ -317,6 +292,5 @@ block content
         span(class="material-symbols-outlined",id="menuIcon") edit
       li(class="pageDelete")
         span(class="material-symbols-outlined",id="menuIcon") delete
-  footer(class="footer") Devlopment by josemontesdeoca00@gmail.com
-  script(type="text/javascript" src='./scripts/admin.js')
+
 

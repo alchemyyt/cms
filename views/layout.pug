@@ -3,9 +3,36 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title title
+    title CMS Chuletas
     link(rel="stylesheet", href="/css/style.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0")
+    script(defer type="text/javascript" src='./scripts/layout.js')
   body
+    div(class="menu",class="inactive")
+      span(class="material-symbols-outlined",id="menuClose") close
+      ul
+        li
+          a(href="/admin")
+            h2 Pages
+        li
+          a(href="")
+            span
+              h2 Login
+    header(class="nav")
+      ul
+        li(id="button")
+          button
+            span(class="material-symbols-outlined",id="menuIcon") menu
+        li
+          span(id="title")
+            h1 Admin
+        li(class="add")
+          span
+            h3 add
+          button
+            a(href="/add")
+              span(class="material-symbols-outlined") add
     block content
+footer(class="footer") Devlopment by josemontesdeoca00@gmail.com
     block afterContent
+

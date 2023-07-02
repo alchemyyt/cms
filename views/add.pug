@@ -1,3 +1,27 @@
 extends layout
 block content
-  h1 hola
+  style .add{display:none;}
+  h2(class="pageTitle") Add Page
+  section(class="newPageSection")
+    form(action="",class="addPageForm")
+      ul
+        li(id="statusCtn")
+          label(for="statusInput") Estatus De Publicacion
+          input(type="checkbox", name="status" id="statusInput")
+        li
+          label(for="titulo")
+            h3 Titulo
+          input(type="text" id="titulo")
+        li
+          label(for="contenido")
+            h3 Contenido
+          input(type="text" id="contenido")
+        li
+          label(for="fecha")
+            h3 Fecha
+          input(type="text" id="fecha")
+        li
+          label(for="tags")
+            h3 Tags
+          input(type="text" id="tags")
+
