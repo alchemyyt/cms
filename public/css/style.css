@@ -24,6 +24,7 @@
 }
 body{
   background-color: var(--bgBlueDark);
+  height: 100%;
 }
 .inactive{
   display: none;
@@ -67,7 +68,8 @@ button{
 }
 .nav #menuIcon{
   display: none;
-  background-color: var(--contrastColorDark);
+  background: rgb(0,161,248);
+  background: linear-gradient(0deg, rgba(0,161,248,1) 0%, rgba(13,218,75,1) 100%);
   margin-left: var(--marginLarge);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -88,6 +90,13 @@ button, input[type="submit"], input[type="reset"] {
   margin-left: var(--marginLarge);
 }
 @media (max-width: 480px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+  }
   .nav #menuIcon{
     display: block;
     position: absolute;
@@ -100,7 +109,8 @@ button, input[type="submit"], input[type="reset"] {
   .add h3{
     display: none;
   }
-  .add button span{
+  .add button a {
+    color: black;
     display: block;
     position: absolute;
     right: 0;
@@ -128,6 +138,9 @@ button, input[type="submit"], input[type="reset"] {
     background-color: var(--bgBlueMedium);
     margin: 0 auto;
     padding:  var(--marginSmall);
+    width: 100%;
+    height: 85vh;
+    overflow: scroll;
   }
   .pagesCtn ul{
     width: 90%;
@@ -166,10 +179,11 @@ button, input[type="submit"], input[type="reset"] {
     font-size: var(--fontMedium);
   }
   .footer{
+    display: grid;
+    place-items: center;
     font-size: var(--fontSmall);
-    margin: auto 0;
     text-align: center;
-    margin-top: var(--marginLarge);
+    padding: var(--marginLarge);
   }
   .menu{
     position: absolute;

@@ -7,3 +7,7 @@ exports.projectAbout=(req,res)=>{
 exports.projectAdmin=(req,res)=>{
   res.render('admin')
 }
+exports.projectAdd=(req,res)=>{
+  res.render('add')
+}
+
